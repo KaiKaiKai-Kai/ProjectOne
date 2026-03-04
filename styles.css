@@ -48,12 +48,14 @@ h6 {
 
 .grayBox{
     background: #141212;
-    padding: 20px 0 10px 0;
+    padding: 20px 20% 10px 20%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    align-items: stretch;
     color: #fff;
     min-height: 300px;
+    text-align: center;
 }
 .flex{
     display: flex;
@@ -99,8 +101,22 @@ h6 {
 }
 
 .card{
-    min-height: 150px;
-    min-width: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height:300px;
+    background:#ffffff;
+    color:#29246A;
+    margin: 20px 0 0 0;
+    padding: 15px 10px 15px 10px;
+    border: 1px solid #141212;
+}
+.card button{
+    color: #141212;
+    background:#59C1DE;
+    border: 0;
+    margin: 5px 10px 5px 10px;
+    padding: 5px 10px 5px 10px;
 }
 .option{
     margin: 10px 5% 10px 5%;
