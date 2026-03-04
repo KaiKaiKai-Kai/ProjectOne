@@ -1,4 +1,3 @@
-@import url(https://db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=Beaufort+for+LOL+Bold);
 *,
 *::before,
 *::after {
@@ -7,6 +6,17 @@
 
 * {
   margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 html,
@@ -43,115 +53,4 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-  font-family: "Beaufort for LOL Bold";
-}
-
-.grayBox{
-    background: #141212;
-    padding: 20px 20% 10px 20%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-items: stretch;
-    color: #fff;
-    min-height: 300px;
-    text-align: center;
-}
-.flex{
-    display: flex;
-    justify-content: space-evenly;
-}
-.container{
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-.container img{
-    width: 100px;
-    height:125px;
-    padding: 20px 0 10px 0;
-    border-radius: 50%;
-    object-fit: cover;
-}
-.container p{
-    text-align: center;
-}
-.whiteBox{
-    background:#ffffff;
-    padding: 20px 0 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color:#141212;
-    min-height: 300px;
-}
-.whiteBox h1 p{
-   color:#141212; 
-}
-.minflex {
-    margin: 0 10% 0 10%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.minflex .container{
-    margin: 0 15px 0 15px;
-}
-
-.card{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height:300px;
-    background:#ffffff;
-    color:#29246A;
-    margin: 20px 0 0 0;
-    padding: 15px 10px 15px 10px;
-    border: 1px solid #141212;
-}
-.card button{
-    color: #141212;
-    background:#59C1DE;
-    border: 0;
-    margin: 5px 10px 5px 10px;
-    padding: 5px 10px 5px 10px;
-}
-.option{
-    margin: 10px 5% 10px 5%;
-}
-footer{
-    width: 100%;
-    padding: 30px 5% 30px 5%;
-}
-footer h1{
-    text-align: center;
-}
-footer .container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
-footer img{
-    width:auto;
-    height:auto;
-}
-nav{ 
-    margin: 5px 10px 5px 10px;
-    padding: 10px 15px 10px 15px;
-}
-.social{
-    width:25px;
-    height:25px;
-    display: flex;
-}
-.social img{
-    object-fit: contain;
-    width:25px;
-    height:25px;
-    margin: 0;
-    padding: 0;
 }
