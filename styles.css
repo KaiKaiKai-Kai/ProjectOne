@@ -2,3 +2,29 @@ body{
     margin:0;
     padding:0;
 }
+.grayBox{
+   background: saddlebrown
+}
+.flex{
+    display: flex;
+}
+.container{
+    width: 100%;
+}
+.whiteBox{
+    background: wheat;
+}
+.minflex {
+    margin: 0 10% 0 10%;
+}
+.card{
+    min-height: 150px;
+    min-width: 50px;
+}
+.option{
+    margin: 10px 5% 10px 5%;
+}
+.social{
+    width:50px;
+    height:50px;
+}
