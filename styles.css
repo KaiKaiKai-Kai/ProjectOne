@@ -1,3 +1,4 @@
+@import url(https://db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=Beaufort+for+LOL+Bold);
 *,
 *::before,
 *::after {
@@ -42,18 +43,17 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  font-family: "Beaufort for LOL Bold";
 }
 
 .grayBox{
-    background: #59C1DE;
-    background: linear-gradient(160deg, rgba(89, 193, 222, 1) 0%, rgba(41, 36, 106, 1) 50%, rgba(200, 170, 110, 1) 100%);
+    background: #141212;
+    padding: 20px 0 10px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-.grayBox, h1, p{
-    color:#141212;
-    padding: 1%;
+    color: #fff;
+    min-height: 300px;
 }
 .flex{
     display: flex;
@@ -61,11 +61,15 @@ h6 {
 }
 .container{
     width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 .container img{
     width: 100px;
-    height:100px;
-    margin: 20px 0 0 10px;
+    height:125px;
+    padding: 20px 0 10px 0;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -73,10 +77,16 @@ h6 {
     text-align: center;
 }
 .whiteBox{
-    background: wheat;
+    background:#ffffff;
+    padding: 20px 0 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color:#141212;
+    min-height: 300px;
+}
+.whiteBox h1 p{
+   color:#141212; 
 }
 .minflex {
     margin: 0 10% 0 10%;
