@@ -62,11 +62,28 @@ h6 {
   overflow-wrap: break-word;
 }
 
+header nav a,
+#competitive .text-content button {
+  padding: 0.6rem 1.2rem;
+  background-color: #1a1a1a;
+  color: #c8aa6e;
+  border: 2px solid #1a1a1a;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #c8aa6e;
+    color: #1a1a1a;
+    border-color: #1a1a1a;
+  }
+}
+
 header {
   background-color: #0a1428;
   color: #c8aa6e;
   padding: 1rem 3rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,20 +100,12 @@ header {
     }
 
     a {
-      background-color: #c8aa6e;
-      color: #0a1428;
-      text-decoration: none;
+      /* * 2. Header-specific layout overrides 
+       */
       font-size: 1.5rem;
-      font-weight: 600;
-      transition: color 0.3s ease;
-
       border-radius: 5px;
-
-      padding: 0.5rem 1rem;
-
-      &:hover {
-        color: #fff;
-      }
+      /* Ensures padding applies correctly on inline 'a' tags */
+      display: inline-block;
     }
   }
 }
@@ -136,10 +145,6 @@ header {
       padding: 1rem;
       margin-bottom: 1rem;
     }
-
-    button {
-      border-radius: 15px;
-    }
   }
 
   .text-content {
@@ -149,22 +154,63 @@ header {
     padding: 1.5rem;
 
     button {
+      /* * 3. Competitive-specific layout positioning 
+       */
       margin-top: auto;
       align-self: flex-end;
+      border-radius: 15px;
+    }
+  }
+}
 
-      padding: 0.6rem 1.2rem;
-      border: 2px solid #1a1a1a;
-      background-color: #1a1a1a;
-      color: #c8aa6e;
-      text-transform: uppercase;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.2s;
+#riot-games {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a1428;
 
-      &:hover {
-        background-color: #c8aa6e;
-        border: 2px solid #1a1a1a;
-        color: #1a1a1a;
+  h1 {
+    font-size: 2.5rem;
+    color: whitesmoke;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  #other-games {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0rem 3rem 3rem 3rem;
+
+    .game-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #59c1de;
+      /* padding: 1rem; */
+      border-radius: 15px;
+      text-align: center;
+
+      h2 {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: #0a1428;
+        font-weight: bold;
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(0.88);
+        }
       }
     }
   }
