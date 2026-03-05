@@ -61,7 +61,10 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-
+#skySurgeBg{background: #59C1DE;}#skySurgeCl{color:#59C1DE;}
+#midnightBlueBg{background: #29246A;}#midnightBlueCl{color:#29246A;}
+#softFawnBg{background: #C8AA6E;}#softFawnCl{color:#C8AA6E;}
+#OnyxBg{background: #141212;}#OnyxCl{color:#141212}
 header {
   background-color: #0a1428;
   color: #c8aa6e;
@@ -99,4 +102,32 @@ header {
       }
     }
   }
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sideBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.container{
+  width:auto;
+}
+.option{
+
+}
+.social{
+
+}
+footer h1{
+  text-align: center;
 }
