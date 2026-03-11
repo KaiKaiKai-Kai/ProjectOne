@@ -265,6 +265,7 @@ header {
   }
 }
 
+/*
 .box {
   display: flex;
   flex-direction: column;
@@ -330,12 +331,12 @@ header {
   --g: 8px;
   
   display: grid;
-  clip-path: inset(1px); /* to avoid visual glitchs */
+  clip-path: inset(1px);
 }
 .gallery > img {
   --_p: calc(-1*var(--g));
   grid-area: 1/1;
-  width: 350px; /* control the size */
+  width: 350px;
   aspect-ratio: 1;
   cursor: pointer;
   transition: .4s .1s;
@@ -460,4 +461,26 @@ header {
 }
 footer h1 {
   text-align: center;
+}
+*/
+
+.holographic-card::before{
+  content:"";
+  position:absolute;
+  top:-50%;
+  left:-50%;
+  width:200%;
+  height:200%;
+  background:linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%, rgba(0,255,255,0.3)
+    );
+  transform:rotate(-45deg);
+  opacity:0;
+  transition:.5s;
+}
+.holographic-card:hover::before{
+  opacity:1;
+  transform:rotate(-45deg) translateY(100%);
 }
